@@ -10,6 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/Bsteward19/Canddi_Tech_Test.git"
   },
+  "dependencies": {
+    "knwl.js": "latest",
+    "request": "latest",
+    "cheerios": "latest"
+  },
   "author": "Brendan Steward",
   "license": "ISC",
   "bugs": {
