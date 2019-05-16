@@ -11,7 +11,7 @@ console.log(domain);
 console.log(globalLog);
 var knwlInstance = new Knwl('english');
 //load knwl modules such as dates ect.
-knwlInstance.register('dates', require('C:/Users/brend/.node_modules_global/node_modules/knwl.js/default_plugins/dates'));
+knwlInstance.register('dates', require('./default_plugins/dates'));
 //get website, and return error if it cant be found. Put website here
 request(domain, function (error, response, html) {
   if (!error && response.statusCode == 200) {
