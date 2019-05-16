@@ -1,7 +1,7 @@
 //load modules
-var Knwl = require("C:/Users/brend/.node_modules_global/node_modules/knwl.js");
-var request = require('C:/Users/brend/.node_modules_global/node_modules/request');
-var cheerios = require('C:/Users/brend/.node_modules_global/node_modules/cheerio');
+var Knwl = require('knwl');
+var request = require('request');
+var cheerios = require('cheerio');
 //create global variable to hold HTML information
 global.globalLog = "This is a variable";
 var email = 'Tim@canddi.com';
