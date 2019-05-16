@@ -4,13 +4,16 @@ var request = require('C:/Users/brend/.node_modules_global/node_modules/request'
 var cheerios = require('C:/Users/brend/.node_modules_global/node_modules/cheerio');
 //create global variable to hold HTML information
 global.globalLog = "This is a variable";
+var email = 'Tim@canddi.com';
+var domain = email.replace(/.*@/,"https://www.");
+console.log(domain);
 //print base variable contents to ensure its initialised
 console.log(globalLog);
 var knwlInstance = new Knwl('english');
 //load knwl modules such as dates ect.
 knwlInstance.register('dates', require('C:/Users/brend/.node_modules_global/node_modules/knwl.js/default_plugins/dates'));
 //get website, and return error if it cant be found. Put website here
-request('https://www.canddi.com/', function (error, response, html) {
+request(domain, function (error, response, html) {
   if (!error && response.statusCode == 200) {
    //log would usually show HTML code, left blank for clarity
     console.log(' ');
